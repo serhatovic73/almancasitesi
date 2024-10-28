@@ -189,7 +189,15 @@ ol li a:hover{
     border-radius: 5rem;
     box-shadow:1rem  rgb(204, 25, 25);
 }
-
+@media(max-width:576px){
+    .menu .box-container{
+        display: grid;
+        grid-template-columns: 1fr; /* Tek kolon */
+        gap: 1.5rem;
+        background-color: #fcee0a;
+       background-color: #fcee0a;
+    }
+     }
 
 
 /*menu end*/
