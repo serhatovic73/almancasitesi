@@ -1,0 +1,489 @@
+.der{
+    color: blue;
+}
+.die{
+    color: red;
+}
+.das{
+    color: green;
+}
+.pl{
+    color: yellow;
+}
+body{
+   background: #fcee0a;
+}
+.clear{
+  clear: both;
+}
+
+.next{
+  margin-left: 70%;
+  color: red;
+  line-height: normal;
+  word-spacing: normal;
+}
+
+/*partical*/
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-color: #fcee0a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:0;
+}
+/*footer*/
+.footer{
+    background-color:#fcee0a;
+    text-align: center;
+     
+} 
+.clear{
+    clear: both;
+}
+.footer .search{
+    display: flex;
+    justify-content: center;
+}
+.footer  .search .search-input{
+    width: 30rem;
+}
+.footer .search .btn3{
+    width: 10rem;
+    background-color: black;
+    color: #f2f2f2;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    border-radius: 2rem;
+    font-size: 14px;
+}
+.footer .share{
+   padding: 2rem 0;
+}
+.footer .share a{
+    width: 5rem;
+    height: 5rem;
+    line-height:5rem ;
+    color: #fcee0a;
+    font-size: 3rem;
+    border: black;
+    border-radius: 50%;
+    margin: 0.03rem;
+    background-color:black;
+}
+.footer .btn3:hover{
+    background: #fcee0a;
+    border: 0.05rem solid black;
+    color: rgb(204, 25, 25);
+}
+.footer .share a:hover{
+    background: #f2f2f2;
+    color: rgb(204,25,25);
+    border: 0.01rem solid black;
+
+}
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:1rem;
+  
+
+}
+.footer .links a{
+    background-color: black;
+    padding: 0.7rem 2rem ;
+    color: #fcee0a;
+    font-size: 2rem;
+    border:black ;
+}
+.footer .links a:hover{
+    background-color: #fcee0a;
+    border: 0.04rem solid black;
+    color: rgb(204, 25, 25);
+}
+.footer .credit {
+    font-size: 2rem;
+    color: black;
+    font-weight: 300;
+    margin-top: 1rem;
+    
+}
+.footer .credit span{
+    color: blue;
+}
+
+/*Search*/
+.search-input{
+    font-size: 1.6rem;
+    color: black;
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
+    
+}
+
+/*resposive*/
+@media(max-width:1700px){
+  #allesdeutsch{
+ display: none;
+   }
+}
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    .header .logo img{
+        height: 7rem;
+    }
+    section{
+        padding: 2rem;
+    }
+  .box-container .box .box-header{
+    font-size: 3.4rem;
+    margin-left: 0.3rem;
+  }
+}
+@media (max-width:968px){
+    .box-container .box .box-header h1{
+        font-size: 3rem;
+      }
+}
+@media (max-width:768px){
+ .home .content h3{
+    font-size: 2rem;
+ }
+ #particles-js{
+  width: 100%;
+ }
+
+}
+
+@media (max-width:593px){
+   .box-container .box{
+    margin: auto;
+    width: 90%;
+   }
+    
+   }
+
+  
+.about img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 20rem;
+}
+.about {
+    color: #b4b1b1;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 4rem;
+  
+   
+}
+.about .kurucu, .yazar1 , .yazar2, .medya{
+    float: left;
+    margin: 1%;
+}
+
+.about span, a{
+     color: #bbb;
+}
+
+
+.ADS{
+    width: 100%;
+    border: 2px solid rgb(154, 46, 46);
+    height: 20rem;
+
+    background: #fcee0a;
+}
+
+
+/*Slider*/
+.slider{
+    background-color: #fcee0a;
+}
+.carousel{
+    width: 50%;
+    background:#fcee0a ;
+    margin: auto;
+    padding: 20px;
+    position:relative;
+}
+
+/*Sidebar start*/
+.sidebar {
+    height: 100vh; /* Tam ekran yüksekliği */
+    position: fixed; /* Sabit pozisyon */
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    background-color: #fcee0a; /* Açık gri arka plan */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 250px; /* Genişlik */
+    padding-top: 150px;
+    padding-right:10px ;
+    color: #2c3e50;
+  }
+  .sidebar a{
+      text-decoration: none;
+      color: #2c3e50;
+    
+      
+  }
+  .sidebar h4{
+    margin-bottom: 20px;
+  }
+  .sidebar li{
+      font-size: 12px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+      border-bottom: 2px solid #16a085;
+  }
+
+  .content {
+    margin-left: 260px; /* Sidebar genişliği kadar içerik kısmını kaydır */
+    padding: 20px;
+  }
+  .text-center{
+      text-align: center;
+      font-size:25px;
+
+  }
+
+  @media(max-width:768px){
+      .sidebar{
+          display: none;
+      }
+      .Possessivpronomen{
+          width: 75%;
+          font-size: 2vw; 
+      }
+  }
+/*Sidebar end*/
+/*about*/
+.team-boxed {
+    color:#313437;
+    background-color:#fcee0a;
+    width: 80%;
+    margin-left: 350px;
+  }
+
+  .team-boxed p {
+    color:#7d8285;
+  }
+  
+  .team-boxed h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:inherit;
+  }
+  
+  @media (max-width:767px) {
+    .team-boxed h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+    }
+  }
+  
+  .team-boxed .intro {
+    font-size:16px;
+    max-width:500px;
+    margin-left:350px;
+  }
+  
+  .team-boxed .intro p {
+    margin-bottom:0;
+  }
+  
+  .team-boxed .people {
+    padding:20px 0;
+    margin-left: 10px;
+   display: flex;
+   
+}
+  
+  .team-boxed .item {
+    text-align:center;
+    margin: 20px;
+
+  }
+  
+  .team-boxed .item .box {
+    text-align:center;
+    padding:30px;
+    background-color:#fff;
+    margin-bottom:30px;
+    width: 350px;
+    height: 600px;
+    border-radius: 4rem;
+  }
+  
+  .team-boxed .item .name {
+    font-weight:bold;
+    margin-top:28px;
+    margin-bottom:8px;
+    color:inherit;
+  }
+  
+  .team-boxed .item .title {
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#d0d0d0;
+    letter-spacing:2px;
+    font-size:13px;
+  }
+  
+  .team-boxed .item .description {
+    font-size:15px;
+    margin-top:15px;
+    margin-bottom:20px;
+  }
+  
+  .team-boxed .item img {
+    width: 270px;
+    height: 270px;
+    border-radius: 20rem;
+  }
+  
+  .team-boxed .social {
+    font-size:18px;
+    color:#a2a8ae;
+  }
+  
+  .team-boxed .social a {
+    color:inherit;
+    margin:0 10px;
+    display:inline-block;
+    opacity:0.7;
+  }
+  
+  .team-boxed .social a:hover {
+    opacity:1;
+  }
+  
+  
+  /*slider*/
+ /* Genel Ayarlar */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container2 a {
+  display: block;
+}
+.container2{
+    width: 90%;
+    margin-left: 40px;
+}
+
+/* Thumbnail (küçük resimler) */
+.thumbnails {
+  display: flex;
+  flex-direction: row;
+  line-height: 0;
+  flex-wrap: wrap; /* Mobil uyumluluk için ekledim */
+}
+
+.thumbnails img {
+  width: 16vmin;
+  height: 15vmin;
+  margin-left: 1rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Slider Büyük Resimler */
+.slides {
+  overflow: hidden;
+  width: 100%;
+  height: 50vmin;
+  position: relative;
+ margin-left: 100px auto;
+}
+
+.slides li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0; /* Başlangıçta gizli */
+  transition: opacity 0.5s ease-in-out; /* Geçiş efekti */
+}
+
+.slides img {
+  width: 100%; /* Responsive için genişliği yüzde olarak ayarladım */
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  margin-left: 0; /* Responsive tasarımda margin kaldırıldı */
+}
+
+.slides li:target {
+  z-index: 3;
+  opacity: 1; /* Hedeflenen görseli göster */
+}
+
+.slides li:not(:target) {
+  opacity: 0; /* Hedeflenmeyen görselleri gizle */
+}
+
+/* Medya Sorguları (Responsive Ayarlar) */
+
+/* 768px ve altı ekranlar için */
+@media (max-width: 768px) {
+  .thumbnails img {
+    width: 20vmin; /* Daha küçük ekranlar için genişliği artırdım */
+    height: 18vmin;
+    margin-left: 5px;
+  }
+
+  .slides {
+    width: 100%; /* Slider genişliğini daha uyumlu yaptım */
+    height: 30vmin;
+    margin-right: auto;
+    margin-right: 0px;
+  }
+
+  .slides img {
+    width: 100%; /* Küçük ekranlar için genişliği yüzde yaparak tam oturmasını sağladım */
+    height: auto;
+    object-position: center; /* Küçük ekranlarda resmi ortala */
+    
+  }
+  .container2{
+    margin-left:0;
+  }
+}
+
+/* 480px ve altı ekranlar için */
+@media (max-width: 480px) {
+  .thumbnails img {
+    width: 25vmin;
+    height: 20vmin;
+    margin-left: 3px;
+  }
+ #sidebarMenu{
+  display: none;
+ }
+  .slides {
+    width: 100%;
+    height: 40vmin;
+  }
+
+  .slides img {
+    object-position: center; /* Küçük ekranlarda resmi ortala */
+  }
+}

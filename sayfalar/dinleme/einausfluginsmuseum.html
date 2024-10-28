@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../../images/Alles deutsch.png">
+    <link rel="stylesheet" href="../../style/style.css">
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+   
+<title>Ein Ausflug ins Museum</title>
+</head>
+<body class="body-icerik">
+
+    
+        <div class="container">
+
+            <a href="" ><button id="geridon" >Geri Dön</button></a>
+            <h1 class="dinlemebaslik">Ein Ausflug ins Museum</h1>
+            <div class="audio-container">
+
+                <div class="audio-player">
+                    <strong>Audio Player</strong>
+                    <audio id="audio" src="../../audio/ein ausflug ins museum.mp3"></audio>
+                
+                    <div id="dinlemekontrol">
+                      <button id="rewind">⏪</button>
+                      <button id="playPause">▶️</button>
+                      <button id="forward">⏩</button>
+                      
+                    </div>
+                
+                    <input type="range" id="progressBar" value="0" step="0.1">
+                    <div class="time">
+                      <span id="currentTime">0:00</span>
+                      <span id="totalTime">0:00</span>
+                    </div>
+                
+                    <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+                    <label for="volumeControl">🔊 Ses</label>
+                  </div>
+    
+                <textarea id="kullanicigirisi" placeholder="Buraya dinlediğiniz metni yazin..."></textarea>
+                <button id="metnigoster">Metni Göster</button>
+    
+                <div id="metin">
+                    Sophie und ihre Klasse machen einen Ausflug ins Museum. Sie sind alle sehr aufgeregt.
+                    Im Museum sehen sie viele interessante Dinge. Es gibt alte Gemälde, Statuen und Dinosaurier-Knochen. Der Lehrer erklärt alles.
+                    Sophie findet die Dinosaurier am spannendsten. Sie fragt: "Wie groß war der größte Dinosaurier?" Der Lehrer antwortet: "Er war sehr, sehr groß!"
+                    Nach dem Rundgang essen sie im Museumscafé. Sophie isst ein Sandwich und trinkt Saft. Sie hat viel gelernt und findet den Ausflug toll.
+                    Am Ende des Tages sagt sie: "Das war ein schöner Tag!"
+                </div>
+                <button id="metnigoster2">Türkçesini Göster</button>
+                <div id="metin2">
+                  Sophie ve sınıfı müzeye bir gezi yapıyor. Hepsi çok heyecanlı. Müzede birçok ilginç şey görüyorlar. Eski tablolar, heykeller ve dinozor kemikleri var. Öğretmen her şeyi açıklıyor. Sophie en çok dinozorları ilginç buluyor.
+
+"O zamanların en büyük dinozoru ne kadar büyüktü?" diye soruyor. Öğretmen cevap veriyor: "O, çok, çok büyüktü!" Gezi sonunda müzenin kafesinde yemek yiyorlar. Sophie bir sandviç yiyor ve meyve suyu içiyor.
+
+Çok şey öğrenmiş ve geziden çok memnun kalmış. Günün sonunda: "Bu güzel bir gündü!" diyor.
+              </div>
+            </div>
+        </div>
+        
+  </div>
+  <button onclick="scrollToTop()" id="topButton" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+<br><br>
+
+     <!-- Bootstrap JS ve bağımlılıkları (jQuery ve Popper.js) -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../../js/dinleme.js"></script>
+    <script src="../../js/yukari.js"></script>
+    <script>
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../../images/Alles deutsch.png">
+    <link rel="stylesheet" href="../../style/style.css">
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+   
+<title>Die neue Schule</title>
+</head>
+<body class="body-icerik">
+
+    
+        <div class="container">
+
+            <a href="" ><button id="geridon" >Geri Dön</button></a>
+            <h1 class="dinlemebaslik">Die neue Schule</h1>
+            <div class="audio-container">
+
+                <div class="audio-player">
+                    <strong>Audio Player</strong>
+                    <audio id="audio" src="../../audio/dieneueschule.mp3"></audio>
+                
+                    <div id="dinlemekontrol">
+                      <button id="rewind">⏪</button>
+                      <button id="playPause">▶️</button>
+                      <button id="forward">⏩</button>
+                      
+                    </div>
+                
+                    <input type="range" id="progressBar" value="0" step="0.1">
+                    <div class="time">
+                      <span id="currentTime">0:00</span>
+                      <span id="totalTime">0:00</span>
+                    </div>
+                
+                    <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+                    <label for="volumeControl">🔊 Ses</label>
+                  </div>
+    
+                <textarea id="kullanicigirisi" placeholder="Buraya dinlediğiniz metni yazin..."></textarea>
+                <button id="metnigoster">Metni Göster</button>
+    
+                <div id="metin">
+                    Lena ist ein neues Mädchen in der Stadt. Sie zieht mit ihrer Familie um und muss in eine neue Schule gehen. Am ersten Tag ist sie sehr nervös.
+                    In der Schule trifft sie ihre Klassenkameraden. Die Lehrerin heißt Frau Müller. Sie ist freundlich und erklärt alles gut. Lena lernt schnell neue Freunde kennen.
+                    Sie spielen in der Pause im Schulhof. Lena spielt mit Anna und Max. Sie lachen und haben viel Spaß. Am Ende des Tages sagt Lena: "Es war ein guter Tag!"
+                    Lena freut sich auf morgen, um ihre neuen Freunde wiederzusehen.
+                </div>
+                <button id="metnigoster2">Türkçesini Göster</button>
+                <div id="metin2">Lena, şehre yeni gelen bir kız. Ailesiyle birlikte taşınıyor ve yeni bir okula gitmek zorunda kalıyor. İlk gün çok heyecanlı ve gergin hissediyor.
+
+                  Okulda sınıf arkadaşlarıyla tanışıyor. Öğretmenin adı Frau Müller. Öğretmen çok nazik ve her şeyi güzel bir şekilde açıklıyor. Lena, hızlıca yeni arkadaşlar ediniyor.
+                  
+                  Teneffüste okul bahçesinde oyun oynuyorlar. Lena, Anna ve Max ile birlikte oynuyor. Hep birlikte gülüp eğleniyorlar. Günün sonunda Lena: "Bugün güzel bir gündü!" diyor.
+                  
+                  Lena, yeni arkadaşlarını tekrar görmek için sabırsızlanıyor. </div>
+            </div>
+        </div>
+        
+  </div>
+  <button onclick="scrollToTop()" id="topButton" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+<br><br>
+
+     <!-- Bootstrap JS ve bağımlılıkları (jQuery ve Popper.js) -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../../js/dinleme.js"></script>
+    <script src="../../js/yukari.js"></script>
+</body>
+</html>

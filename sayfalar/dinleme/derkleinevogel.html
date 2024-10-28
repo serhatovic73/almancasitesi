@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../../images/Alles deutsch.png">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/main.css">
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+   
+<title>Der kleine Vogel</title>
+</head>
+<body class="body-icerik">
+
+    
+        <div class="container">
+
+            <a href="" ><button id="geridon" >Geri Dön</button></a>
+            <h1 class="dinlemebaslik">Der kleine Vogel</h1>
+            <div class="audio-container">
+
+                <div class="audio-player">
+                    <strong>Audio Player</strong>
+                    <audio id="audio" src="../../audio/derkleinevogel.mp3"></audio>
+                
+                    <div id="dinlemekontrol">
+                      <button id="rewind">⏪</button>
+                      <button id="playPause">▶️</button>
+                      <button id="forward">⏩</button>
+                      
+                    </div>
+                
+                    <input type="range" id="progressBar" value="0" step="0.1">
+                    <div class="time">
+                      <span id="currentTime">0:00</span>
+                      <span id="totalTime">0:00</span>
+                    </div>
+                
+                    <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+                    <label for="volumeControl">🔊 Ses</label>
+                  </div>
+    
+                <textarea id="kullanicigirisi" placeholder="Buraya dinlediğiniz metni yazin..."></textarea>
+                <button id="metnigoster">Metni Göster</button>
+    
+                <div id="metin">
+                    Es war einmal ein kleiner Vogel. Der Vogel heisst Piep. Piep war blau und sehr fröhlich
+                    Jeden Tag flog Piep in den Garten. Dort gab es viele Blumen und Bäume. Piep liebte es, in den Bäumen zu sitzen und zu singen.
+                    Eines Tages traf Piep eine kleine Maus. Die Maus hieß Mimmi. Piep und Mimmi wurden Freunde. Sie spielten zusammen im Garten.
+                    Am Abend flog Piep zurück in sein Nest. Er war müde, aber glücklich. Piep träumte von seinen Abenteuern mit Mimmi.
+                </div>
+                <button id="metnigoster2">Türkçesini Göster</button>
+                <div id="metin2">Bir zamanlar küçük bir kuş varmış. Bu kuşun adı Piep'miş. Piep maviymiş ve çok neşeliymiş.
+                  Her gün bahçeye uçarmış. Bahçede birçok çiçek ve ağaç varmış. Piep, ağaçların üzerinde oturup şarkı söylemeyi çok severmiş.
+                  
+                  Bir gün Piep, küçük bir fareyle tanışmış. Farenin adı Mimmi’ymiş. Piep ve Mimmi arkadaş olmuşlar. Bahçede birlikte oynamışlar.
+                  
+                  Akşam olunca Piep yuvasına geri dönmüş. Yorgun ama mutluymuş. O gece, Mimmi ile yaşadığı maceraları rüyasında görmüş. </div>
+              </div>
+        </div>
+        
+  </div>
+  <button onclick="scrollToTop()" id="topButton" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+<br><br>
+
+     <!-- Bootstrap JS ve bağımlılıkları (jQuery ve Popper.js) -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../../js/dinleme.js"></script>
+    <script src="../../js/yukari.js"></script>
+</body >
+</html>

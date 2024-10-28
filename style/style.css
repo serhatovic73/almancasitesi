@@ -1,0 +1,602 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: 0.2s ease;
+    font-family: 'IBM Plex Sans', sans-serif;
+    
+}
+:root{
+    --main-color:rgb(255, 0, 0);
+    --black-color:black;
+    --border: rgb(203, 19, 133);
+}
+html{
+    
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+span{
+    color:#16a085;
+    font-weight: bolder;
+}
+ .container code{
+    font-size: 15px;
+}
+body{
+   height: 100vh;
+   background: #fcee0a;
+}
+.container ol{
+  
+    margin-left: 10px;
+}
+#menu-btn{
+    display: none;
+}
+.header .logo img{
+    height: 10rem;
+}
+
+.header{
+ background-color:#fcee0a;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 7%;
+ margin: 2rem 7%;
+ height: 11rem;
+ border-radius: 30rem;
+ box-shadow: 0px 0px 17px -2px rgb(23, 20, 20);
+ position: sticky;
+ top: 2rem;
+ z-index: 1000px;
+ z-index: 10;
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: var(--black-color);
+    border-bottom: 0.2rem solid transparent;
+    text-decoration: none;
+}
+.header .navbar .activ,
+.header .navbar a:hover{
+    border-color: var(--border);
+    padding-bottom: 0.5rem;
+    
+}
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    background-color: transparent;
+}
+section{
+    background: #fcee0a;
+    z-index: -3;
+    padding: 3.5rem 7%;
+}
+.home{
+    min-height: 100vh;
+    background-size: 100%;
+    background-position: center;
+    margin-top: -15rem;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.btn1{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: rgb(12, 12, 12);
+    background-color:#fcee0a;
+    cursor: pointer;
+
+}
+
+.btn1:hover{
+    background-color:  rgb(204, 25, 25);
+    border: 0.07rem;
+    color: #fcee0a;
+    text-decoration: none;
+}
+a.btn{
+    font-size: 1.5rem;
+    color: rgb(150, 35, 35);
+    text-decoration: none;
+    border-bottom:3rem solid red;
+    border-bottom: 0.2rem solid  rgb(204, 25, 25);
+    border-radius: 4rem;
+
+}
+
+a.btn:hover{
+    color: rgb(219, 33, 33);
+}
+
+
+.home .content a{
+     margin-top:30rem ; 
+ }
+
+
+/*menu start*/
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));/*yan yana getirmek icin */
+    gap: 1.5rem;/*yandan bosluk*/
+   background-color: #fcee0a;
+}
+.menu .box-container .box{
+    padding: 4rem;
+    background-color: #fcee0a;
+    color: black;
+    border-radius: 3rem;
+    border: 2px solid rgb(202, 33, 33);
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition: 1s;
+}
+ .box ul li a{
+    font-size: 1.3rem;
+    
+}
+
+
+ ol li a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+}
+ol li a:hover{
+    color: rgb(219, 33, 33);
+}
+.box:hover{
+     transform: scale(1.07);
+     box-shadow: 0.2rem 0.2rem  0.2rem 0.2rem;
+}
+.box .box-head h1{
+    border-bottom: 0.7rem solid rgb(204, 25, 25);
+    padding:15px;
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+    margin: 2rem 0;
+    border-radius: 20rem;
+}
+.menu .levels{
+    margin: 1rem;
+    font-size: 5rem;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    border-bottom: 0.4rem solid  rgb(204, 25, 25);
+    border-radius: 5rem;
+    box-shadow:1rem  rgb(204, 25, 25);
+}
+
+
+
+/*menu end*/
+
+/*Grammer*/
+
+/*icerik kismi*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+}
+table, th, td {
+    border: 1px solid #bdc3c7;
+    text-align: left;
+    padding: 10px;
+}
+th {
+    background-color: #9c9200ef;
+    color: white;
+}
+td {
+    background-color: #ecf0f1;
+
+}
+tbody tr:nth-child(even) td {
+    background-color: rgb(233, 220, 83);
+}
+.container strong{
+        color: #16a085;
+
+}
+
+.container h1,h2,h3 {
+              color: #2c3e50;
+              border-bottom: 2px solid #16a085;
+              padding-bottom: 10px;
+              padding-top: 16px;
+
+              
+  }
+  .container .not{
+    color: red;
+  }
+  p{
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+.H1{
+ color:white;
+ margin: auto;
+ margin-bottom: 1rem;
+ width: 70%;
+ height: 4rem;
+ font-size: 1.7rem;
+  text-align: center;
+  border-bottom: 0.4rem solid white;
+  border-radius: 30rem;
+  padding-bottom: 5rem;
+
+}
+
+.container{
+    width: 50%;
+    margin:50px auto;
+    padding: 20px;
+    background: palegoldenrod;
+    font-size: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*AUDIO*/
+.story p{
+    font-size: 20px;
+    line-height: 35px;
+
+}
+.story audio{
+    margin:25px  auto;
+}
+.word {
+    transition: color 0.3s ease; /* Yumuşak geçiş efekti */
+    font-size: 20px;
+    line-height: 35px;
+}
+.highlight {
+text-decoration: underline; /* Alt çizgi */
+color: rgb(255, 0, 0); /* İsteğe bağlı, renkli vurgu */
+}
+.word:hover {
+    background-color: #0ec20e;
+}
+
+
+
+/*geri don buttonu*/
+ #geridon button{
+    border-radius: 20rem;
+    margin: 2rem;
+    padding: 1rem;
+    color: #0833f7;
+    background-color: rgb(221, 224, 23);
+}
+#geridon button:hover{
+    background-color: #01328d;
+    color: rgb(221, 224, 23);
+}
+
+/*sonraki buttonu*/
+#sonraki button{
+    border-radius: 20rem;
+    margin: 2rem;
+    padding: 1rem;
+    color: #0833f7;
+    background-color: rgb(221, 224, 23);
+    margin-left: 80%;
+}
+#sonraki button:hover{
+    background-color: #01328d;
+    color: rgb(221, 224, 23);
+}
+
+/*yukari cikma buttonu*/
+#topButton {
+    display: none; /* Başlangıçta gizli */
+    position: fixed; /* Sayfanın herhangi bir yerine sabitle */
+    bottom: 20px; /* Sayfanın altından 20px yukarıda */
+    right: 30px; /* Sayfanın sağından 30px solda */
+    z-index: 99; /* Diğer elementlerin üzerinde görünmesi için */
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #40413e; /* Buton rengi */
+    color: #ffffff; /* Yazı rengi */
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px; /* Yuvarlak köşeler */
+  }
+  
+  #topButton:hover {
+    background-color: #333; /* Hover (üzerine gelince) rengi */
+  }
+  .red{
+    color: #ec0909;
+  }
+  .example{
+    font-family: italic;
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .container ul{
+    list-style-type: none;
+    margin: 10px;
+  }
+  .container ul li{
+    margin: 20px 0;
+  }
+
+  .body-icerik{
+    background-color: #fcee0a ;
+  }
+  
+/*hören und schreiben icin css baslangic*/
+.audio-container{
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+#metnigoster{
+    display: block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #cec442;
+    color: #0833f7;
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+
+
+#metin{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 600px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    height: 350px;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#metnigoster2{
+    display: block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #cec442;
+    color: #0833f7;
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+
+
+#metin2{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 600px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    height: 350px;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#kullanicigirisi{
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 600px;
+    border-radius: 5px;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.audio-player {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    margin: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .audio-player strong{
+    font-size: 20px;
+    padding: 8px;
+    background-color: #cec442;
+    border-radius: 20rem;
+    color: black;
+
+  }
+
+  #dinlemekontrol {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+  }
+
+  #dinlemekontrol button {
+    background-color: #cec442;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  #audio-player button:hover {
+    background-color: #24af36;
+  }
+
+  input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  .dinlemebaslik{
+    text-align: center;
+  }
+
+
+@media(max-width:768px){
+    .audio-player{
+       margin: 50px;
+       width: 100%;
+    }
+    #kullanicigirisi{
+        margin: 20px 50px;
+        width: 100%;
+    }
+    #metnigoster{
+        margin: 10px 50px;
+    }
+    #metin{
+        margin: 20px 50px;
+        width: 100%;
+  }
+}
+@media(max-width:576px){
+    .audio-player{
+        margin: 50px;
+        width: 100%;
+     }
+    #kullanicigirisi{
+        margin: 20px 50px;
+        width: 100%;
+    }
+    #metnigoster{
+        margin: 20px 50px;
+        
+    }
+    #metin{
+        margin: 20px 50px;
+        width: 100%;
+  }
+}
+/*hören und schreiben icin css bitis*/
+
+/*test */
+.question {
+    margin-bottom: 20px;
+}
+.question h3 {
+    margin-bottom: 10px;
+}
+.question label {
+    display: block;
+    margin-bottom: 5px;
+}
+#geridon{
+    border-radius: 20rem;
+    margin: 2rem;
+    padding: 1rem;
+    color: #0833f7;
+    background-color: rgb(221, 224, 23);
+}
+#geridon button:hover {
+    background-color: #01328d;
+    color: rgb(221, 224, 23);
+}
+#result {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-left: 6px solid #4CAF50;
+}
+#kontrol {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#kontrol button:hover {
+    background-color: #45a049;
+}
+
+/*kelimeler*/
+.container-kelimeler{
+    width: 70%;
+    margin:50px auto;
+    padding: 20px;
+    background: palegoldenrod;
+    font-size: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container-kelimeler h1{
+    border-bottom: 2px solid #24af36;
+    justify-content: center;
+}
+
+
+/*chat image*/
+.chat-image{
+    width: 100%;
+    
+}
+#allesdeutsch{
+    z-index:3;
+    position: absolute;
+    font-size: 25vh;
+    margin-top: -300px;
+    margin-left: -100px;
+    font-weight: 700;
+   
+}
+#allesdeutsch strong{
+    line-height: 1.2;   
+     text-shadow: 
+    7px 7px 0 rgba(255, 0, 0, 0.8), /* Kırmızı gölge */
+    9px 9px 0 rgba(0, 0, 0, 0.7), /* Siyah gölge */
+    12px 12px 0 rgba(255, 255, 0, 0.8); /* Sarı gölge */
+}
+
+
+.slogan-image{
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-top: -300px;
+    position: absolute;
+    z-index: 4;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../style/chat.css"> <!-- CSS dosyası -->
+    <title>Yorum Alanı</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Chat</h1>
+        
+        <form id="commentForm">
+            <label for="name">İsim:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="comment">Yorum:</label>
+            <textarea id="comment" name="comment" required></textarea>
+
+            <button type="submit">Yorum Gönder</button>
+        </form>
+
+        <div id="commentsSection">
+            <h2>Sohbet:</h2>
+            <div id="commentsList"></div>
+        </div>
+    </div>
+    <button onclick="scrollToTop()" id="topButton" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="../../js/script.js"></script> <!-- JavaScript dosyası -->
+    <script src="../../js/yukari.js"></script>
+</body>
+</html>
